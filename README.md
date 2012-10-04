@@ -1,4 +1,4 @@
-# Drafteable
+# Drafteable [![Build Status](https://travis-ci.org/littlemove/drafteable.png)](https://travis-ci.org/littlemove/drafteable)
 
 Drafteable is a super simple and opinionated ActiveRecord model draft
 behavior encapsulation:
