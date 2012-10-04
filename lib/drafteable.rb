@@ -17,7 +17,7 @@ module Drafteable
 
     def draft!
       self.draft = true
-      self.save(validation: false)
+      self.save(validate: false)
     end
 
     def publish!
