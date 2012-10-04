@@ -4,9 +4,10 @@ Drafteable is a super simple and opinionated ActiveRecord model draft
 behavior encapsulation:
 
 A drafteable model should:
-    - Provide a boolean field as a flag for its draft status.
-    - Provide methods to check draft or published status.
-    - Provide methods to change draft or published status.
+
+- Provide a boolean field as a flag for its draft status.
+- Provide methods to check draft or published status.
+- Provide methods to change draft or published status.
 
 ## Installation
 
@@ -28,8 +29,8 @@ On your ActiveRecord model add
 
     acts_as_drafteable
 
-Then you get published?, draft? (for checking the state) and publish!,
-draft! (for changing the status).
+Then you get `published?`, `draft?` (for checking the state) and `publish!`,
+`draft!` (for changing the status).
 
 Note that calling draft! will save the model skipping validations.
 
