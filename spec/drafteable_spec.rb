@@ -1,6 +1,8 @@
 require 'active_record'
 require 'drafteable'
 
+require 'fileutils'
+
 describe Drafteable do
 
   before :all do
@@ -56,6 +58,8 @@ end
 private
 
 def setup_db
+  db_dir = 'spec/db'
+  FileUtils.mkdir(db_dir) unless File.exists?(db_dir)
   ActiveRecord::Base.establish_connection(
                                           adapter: 'sqlite3',
                                           database: 'spec/db/development.sqlite3'
@@ -67,7 +71,6 @@ def setup_db
 end
 
 def teardown_db
-  require 'fileutils'
   FileUtils.rm('spec/db/development.sqlite3')
 end
 
