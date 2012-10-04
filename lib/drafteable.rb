@@ -16,11 +16,13 @@ module Drafteable
     end
 
     def draft!
-      self.update_attribute(:draft, true)
+      self.draft = true
+      self.save(validation: false)
     end
 
     def publish!
-      self.update_attribute(:draft, false)
+      self.draft = false
+      self.save
     end
 
   end
