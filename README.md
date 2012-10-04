@@ -1,6 +1,12 @@
 # Drafteable
 
-TODO: Write a gem description
+Drafteable is a super simple and opinionated ActiveRecord model draft
+behavior encapsulation:
+
+A drafteable model should:
+    - Provide a boolean field as a flag for its draft status.
+    - Provide methods to check draft or published status.
+    - Provide methods to change draft or published status.
 
 ## Installation
 
@@ -18,7 +24,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+On your ActiveRecord model add
+
+    acts_as_drafteable
+
+Then you get published?, draft? (for checking the state) and publish!,
+draft! (for changing the status).
+
+Note that calling draft! will save the model skipping validations.
 
 ## Contributing
 
@@ -27,3 +40,10 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+You've got test under spec/ and `bundle install` should take care of
+all gem dependencies for development.
+
+## TODO
+
+1. Write generator to create migration with draft field on model.

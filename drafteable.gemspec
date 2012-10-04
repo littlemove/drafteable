@@ -8,8 +8,9 @@ Gem::Specification.new do |gem|
   gem.version       = Drafteable::VERSION
   gem.authors       = ["Diego Fernandez Fernandez"]
   gem.email         = ["diego.fernandez.fernandez@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Drafteable is a super simple and opinionated ActiveRecord model draft
+behavior encapsulation}
+  #gem.summary       = %q{TODO: Write a gem summary}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
