@@ -11,7 +11,7 @@ Gem::Specification.new do |gem|
   gem.description   = %q{Drafteable is a super simple and opinionated ActiveRecord model draft
 behavior encapsulation}
   #gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.homepage      = "http://github.com/littlemove/drafteable/"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
