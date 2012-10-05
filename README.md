@@ -9,6 +9,11 @@ A drafteable model should:
 - Provide methods to check draft or published status.
 - Provide methods to change draft or published status.
 
+Right now, this gem provides the last two points. You should generate the
+appropriate migration to add a draft column. Something like:
+
+    add_column :posts, :draft, :boolean, default: false
+
 ## Installation
 
 Add this line to your application's Gemfile:
